@@ -1,4 +1,4 @@
-export function Home() {
+export function Timeout() {
   return (
     <div
       style={{
@@ -14,12 +14,23 @@ export function Home() {
         style={{
           fontSize: "2.5rem",
           fontWeight: "bold",
-          color: "#FF4081",
+          color: "#4285F4", // Change color to a blue shade
           textAlign: "center",
           margin: 0, // Remove default margin
         }}
       >
-        Session about to expire. Refresh to continue.
+        Uh-oh! Your session has timed out ⌛
+      </p>
+      <p
+        style={{
+          fontSize: "1.2rem",
+          textAlign: "center",
+          marginTop: "10px",
+          margin: 0, // Remove default margin
+        }}
+      >
+        It seems you took a bit too long. Refresh the page to continue your app
+        journey!
       </p>
     </div>
   );

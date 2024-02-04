@@ -13,7 +13,7 @@ export function TimeoutProvider({ children }: { children: ReactNode }) {
 
       timeoutRef.current = setTimeout(() => {
         // perform whatever logic you want in here, clear localStorage and log user out, show a popup modal or just navigate to another page
-        navigate('/2024');
+        navigate('/timeout');
       }, 10000);
     };
 

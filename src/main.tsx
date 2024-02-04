@@ -5,7 +5,7 @@ import './index.css';
 
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { Home } from './pages/Home.tsx';
-import { NextYear } from './pages/2024.tsx';
+import { Timeout } from './pages/TimeoutPage.tsx';
 
 const router = createBrowserRouter([
   {
@@ -17,8 +17,8 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: '/2024',
-        element: <NextYear />,
+        path: '/timeout',
+        element: <Timeout />,
       },
     ],
   },
